@@ -12,7 +12,7 @@ Redis
 # INSTALLATION
 Clone the repository on to your local machine
 # RUNNING THE SERVER
-node pubServer
+node pubServer/n
 node SubServerA
 node SubServerB
 # ENDPOINTS

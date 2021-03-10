@@ -5,9 +5,9 @@ subscribers where a topic is a string and a subscriber is an HTTP endpoint. When
 should be forwarded to all subscriber endpoints. 
 
 ### TECHNOLOGIES
-Node
-Express
-Redis
+#####Node
+#####Express
+#####Redis
 
 ### INSTALLATION
 Clone the repository on to your local machine

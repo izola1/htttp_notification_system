@@ -4,12 +4,12 @@ This is a simple http pub/sub system. A server (or set of servers) will keep tra
 subscribers where a topic is a string and a subscriber is an HTTP endpoint. When a message is published on a topic, it
 should be forwarded to all subscriber endpoints. 
 
-# TECHNOLOGIES
+## TECHNOLOGIES
 Node
 Express
 Redis
 
-# INSTALLATION
+## INSTALLATION
 Clone the repository on to your local machine
 # RUNNING THE SERVERS
 node pubServer 

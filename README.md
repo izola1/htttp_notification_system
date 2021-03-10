@@ -12,20 +12,32 @@ Redis
 ### INSTALLATION
 Clone the repository on to your local machine
 ### RUNNING THE SERVERS
-`node pubServer`<br/> 
-node SubServerA
-node SubServerB
+`node pubServer` - Publisher Server<br/> 
+`node SubServerA` - Subscriber Server A<br/>
+`node SubServerB` - Subscriber Server A<br/>
 ### ENDPOINTS
-All the endpoints expect JSON in the body of the requests
+POST - `/subscribe/:topic` - For subscribing to a topic
 
-POST /subscribe/:topic
+       Expected Body:
+        `{
+          url: string
+         }` 
 
-Description: sets up a subscription between a topic and the sent URL
+        Success Response
+        `{
+          url: string,
+          topic: string
+         }`
 
-Body parameters: url
+POST `/publish/:topic`  - For Publishing a message on a given topic
 
-POST /publish/:topic
+      Expected Body:
+          `{
+            [key: string]: any
+           }` 
 
-Description: publishes a message to all subscribed URLs in a specific topic
-
-Body parameters: a json object with any data
+       Success Response:
+       `{
+          topic: string
+          data: object // whatever data was sent in the publish body
+        }`

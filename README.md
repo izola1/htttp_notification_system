@@ -12,8 +12,9 @@ Redis
 # INSTALLATION
 Clone the repository on to your local machine
 # RUNNING THE SERVER
-To start the script run npm run start:dev
-It would be up and running on port 5555
+node pubServer
+node SubServerA
+node SubServerB
 # ENDPOINTS
 All the endpoints expect JSON in the body of the requests
 

@@ -9,12 +9,12 @@ Node
 Express
 Redis
 
-# Installation
+# INSTALLATION
 Clone the repository on to your local machine
-cd to that folder and run npm i
+# RUNNING THE SERVER
 To start the script run npm run start:dev
 It would be up and running on port 5555
-# Endpoints
+# ENDPOINTS
 All the endpoints expect JSON in the body of the requests
 
 POST /subscribe/:topic

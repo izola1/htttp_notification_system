@@ -11,8 +11,16 @@ Redis
 
 # INSTALLATION
 Clone the repository on to your local machine
-# RUNNING THE SERVER
-node pubServer/n
+# RUNNING THE SERVERS
+node pubServer 
+
+Clone this repository in your folder of choice
+cd to that folder and run npm i
+To start the script run npm run start:dev
+It would be up and running on port 5555
+
+
+
 node SubServerA
 node SubServerB
 # ENDPOINTS

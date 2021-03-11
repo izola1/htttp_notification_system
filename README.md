@@ -16,7 +16,7 @@ Clone the repository on to your local machine
 `node SubServerA` - Subscriber Server A<br/>
 `node SubServerB` - Subscriber Server A<br/>
 ### ENDPOINTS
-POST - `/subscribe/:topic` - For subscribing to a topic
+POST - `http://localhost:8000/subscribe/:topic` - For subscribing to a topic
 
        Expected Body:
         `{
@@ -29,7 +29,7 @@ POST - `/subscribe/:topic` - For subscribing to a topic
           topic: string
          }`
 
-POST `/publish/:topic`  - For Publishing a message on a given topic
+POST `http://localhost:8000/publish/:topic`  - For Publishing a message on a given topic
 
       Expected Body:
           `{
